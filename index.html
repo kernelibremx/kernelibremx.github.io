@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Kernel Libre Mx</title>
-
-    <style>
-        body {
-            background: #1a1a2e;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        header {
-            background: #16213e;
-            padding: 30px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .accent {
-            color: #ff4dfd;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kernel Libre Mx — conocimiento, tecnología y cultura libre.">
+  <title>Kernel Libre Mx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="scanlines" aria-hidden="true"></div>
 
-<header>
-    <h1>Kernel <span class="accent">Libre</span> Mx</h1>
-    <p>Toda la información debería ser libre.</p>
-</header>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Kernel Libre Mx - inicio">
+      <span class="logo-mark">&gt;_</span>
+      <span>KERNEL LIBRE MX</span>
+    </a>
 
-<main>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="cursos.html"><span>01</span> CURSOS</a>
+      <a href="blog.html"><span>02</span> BLOG</a>
+      <a href="acerca.html"><span>03</span> ACERCA DE MÍ</a>
+    </nav>
+  </header>
 
-    <h2>Bienvenido</h2>
+  <main class="container">
+    <section class="terminal-intro">
+      <div class="terminal-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="terminal-title">kernel@libre:~</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">kernel@libre:~$</span> ./bienvenida.sh</p>
+        <h1>Toda la información<br>debería ser libre.</h1>
+        <p class="muted">Tecnología · Linux · Ciberseguridad · Conocimiento</p>
+        <p class="cursor-line"><span class="prompt">kernel@libre:~$</span> acceso_concedido<span class="cursor"></span></p>
+      </div>
+    </section>
 
-    <p>
-        Un espacio dedicado a compartir conocimiento,
-        tecnología, cultura y recursos.
-    </p>
+    <section class="grid">
+      <article class="box">
+        <div class="box-label">[ CURSO ]</div>
+        <h2>Introducción a Linux</h2>
+        <p>Aprende los fundamentos de Linux y la terminal desde cero.</p>
+        <a class="action" href="cursos.html">ABRIR CURSOS →</a>
+      </article>
 
-</main>
+      <article class="box">
+        <div class="box-label">[ BLOG ]</div>
+        <h2>Últimas publicaciones</h2>
+        <p>Artículos sobre tecnología, software libre, Linux y seguridad.</p>
+        <a class="action" href="blog.html">LEER BLOG →</a>
+      </article>
 
+      <article class="box">
+        <div class="box-label">[ INFO ]</div>
+        <h2>Acerca de mí</h2>
+        <p>Conoce el proyecto, su filosofía y por qué nació Kernel Libre Mx.</p>
+        <a class="action" href="acerca.html">CONOCER MÁS →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>kernel@libre:~$</span> echo "Toda la información debería ser libre."
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
